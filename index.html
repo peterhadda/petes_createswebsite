@@ -2,40 +2,58 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Barely Built — an AI animated series</title>
-<meta name="description" content="Barely Built is an animated comedy about three broke friends who thrift, restyle and sell clothes from a tiny apartment. New episodes on Instagram @petes_creates.">
-<meta property="og:title" content="Barely Built — Season 3">
-<meta property="og:description" content="Three friends. One apartment. A business that's barely built.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pete's Creates</title>
+<meta name="description" content="Pete's Creates makes AI-animated stories, commercials and websites. Home of Barely Built, the animated series about three friends running a thrift business from one apartment.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pete's Creates">
+<meta property="og:title" content="Pete's Creates · Home of Barely Built">
+<meta property="og:description" content="AI-animated stories, commercials and websites. Watch Barely Built, the series about three friends and a business that's barely built.">
 <meta property="og:image" content="assets/01_poster_title.jpg">
+<meta property="og:image:alt" content="Barely Built Season 3 poster with Anna, Sienna, Peter and Ziggie the cat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pete's Creates · Home of Barely Built">
+<meta name="twitter:description" content="AI-animated stories, commercials and websites. Watch Barely Built, the series about three friends and a business that's barely built.">
+<meta name="twitter:image" content="assets/01_poster_title.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="lights" aria-hidden="true"></div>
+<div class="room" aria-hidden="true">
+  <picture>
+    <source media="(min-aspect-ratio: 1/1)" srcset="assets/bg_room_wide.jpg">
+    <img id="room-img" src="assets/bg_room_tall.jpg" alt="">
+  </picture>
+</div>
 
 <header class="nav">
-  <a class="brand" href="#top">Barely Built<span>.</span></a>
-  <nav aria-label="Main">
-    <a href="#cast">Cast</a>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a class="pill" href="#contact">Collabs</a>
-  </nav>
+  <div class="wrap nav-in">
+    <a class="wordmark" href="#top">Pete's Creates</a>
+    <nav aria-label="Main">
+      <a href="#cast">Cast</a>
+      <a href="#about">The series</a>
+      <a href="#work">Work</a>
+      <a class="btn btn-nav" href="#contact">Work with me</a>
+    </nav>
+  </div>
 </header>
 
 <main id="top">
-  <!-- HOME -->
+
+  <!-- ============ PART 1: THE SERIES ============ -->
   <section class="hero wrap">
-    <div class="hero-copy">
-      <p class="note rot-l">Season 3 is here!</p>
-      <h1>Three friends. One apartment. A business that's <em>barely built.</em></h1>
-      <p class="lead">A warm, funny animated series about being broke, figuring out adult life and building something of your own, one thrifted jacket at a time.</p>
+    <div class="panel hero-copy">
+      <p class="note">Season 3 is here!</p>
+      <h1><span class="brand-name">Pete's Creates</span> makes AI-animated stories.</h1>
+      <p class="tag">The series</p>
+      <p class="series-title">Barely Built</p>
+      <p class="tagline">Three friends. One apartment. A business that's barely built.</p>
+      <p class="lead">They thrift clothes, restyle them and sell them online from Anna's living room. It's a warm, funny series about being broke, figuring out adult life and building something of their own.</p>
       <div class="cta-row">
         <a class="btn" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">Watch on Instagram</a>
-        <a class="btn btn-soft" href="#cast">Meet the gang</a>
+        <a class="btn-alt" href="#cast">Meet the gang</a>
       </div>
     </div>
     <figure class="frame hero-poster">
@@ -43,10 +61,9 @@
     </figure>
   </section>
 
-  <!-- CAST -->
   <section id="cast" class="section wrap">
-    <div class="head">
-      <p class="note rot-r">who's who</p>
+    <div class="panel head">
+      <p class="note">who's who</p>
       <h2>Meet the cast</h2>
     </div>
 
@@ -74,7 +91,7 @@
         <p>She can make anything look better in seconds. Give her a sad old jacket and watch it become the best thing on the rack.</p>
       </article>
       <article class="card">
-        <figure class="frame"><video class="loop" poster="assets/13_peter_and_ziggie.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Ziggie the orange tabby sitting next to Peter"><source src="assets/video/13_peter_and_ziggie.mp4" type="video/mp4"></video></figure>
+        <figure class="frame"><img src="assets/ziggie_solo.jpg" width="690" height="920" loading="lazy" alt="Ziggie the orange tabby sitting and looking up"></figure>
         <h3>Ziggie</h3>
         <p class="tag">Peter's cat</p>
         <p>An orange tabby who never says a word and judges everyone anyway.</p>
@@ -82,78 +99,101 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="section wrap about">
-    <div>
-      <div class="head"><p class="note rot-r">the story</p><h2>About the series</h2></div>
+    <div class="panel">
+      <h2>About the series</h2>
       <p>Barely Built follows three friends in their mid-20s who start a small business from an apartment. They thrift clothes, restyle them and sell them online.</p>
-      <p>It's a comedy about being broke, figuring out adult life and building something of your own, told in a bright, cinematic 3D animated style.</p>
+      <p>It's a comedy about being broke, figuring out adult life and building something of their own, told in a bright, cinematic 3D animated style.</p>
       <p>Every episode happens in Anna's apartment: terracotta walls, string lights, sticky notes everywhere, and a clothing rack that's always one hanger away from collapsing.</p>
-      <p class="made">Created by <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">Pete's Creates</a>, an AI creator making animated stories and websites.</p>
+      <p>Barely Built is an original series by Pete's Creates. New episodes go up on Instagram at <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a>.</p>
     </div>
-    <figure class="frame ziggie">
-      <img src="assets/15_ziggie_sheet.jpg" width="1200" height="678" loading="lazy" alt="Ziggie the orange tabby from many angles and expressions">
-      <figcaption class="note">Ziggie, judging from every angle</figcaption>
+    <figure class="frame about-photo">
+      <img src="assets/08_scene_working.jpg" width="900" height="1600" loading="lazy" alt="Sienna folds clothes at the packing table while Anna looks on and Peter works on the couch with Ziggie">
     </figure>
   </section>
 
-  <!-- WORK -->
+  <!-- ============ PART 2: WORK WITH PETE'S CREATES ============ -->
   <section id="work" class="section wrap">
-    <div class="head">
-      <p class="note rot-r">made by me</p>
-      <h2>My work</h2>
-      <p class="sub">A commercial for a client, plus two episodes from the series and how they did on Instagram.</p>
+    <div class="panel panel-dark part-head">
+      <p class="eyebrow">The studio</p>
+      <h2>Work with Pete's Creates</h2>
+      <p>I make Barely Built, and I make the same kind of work for brands and people with a story to tell.</p>
     </div>
+
+    <div class="panel head">
+      <h2>What I make</h2>
+    </div>
+    <div class="offer-grid">
+      <article class="panel offer">
+        <h4>Animated commercials</h4>
+        <p>Short animated ads that tell your brand's story, cut for Instagram.</p>
+      </article>
+      <article class="panel offer">
+        <h4>Custom animated stories</h4>
+        <p>Your idea, your characters or your message, turned into an animated short.</p>
+      </article>
+      <article class="panel offer">
+        <h4>Websites</h4>
+        <p>Fast, mobile-first sites with a look of their own, like this one.</p>
+      </article>
+    </div>
+
     <article class="feature">
       <div class="frame feature-video">
-        <video poster="assets/video/commercial_poster.jpg" width="720" height="1280" controls playsinline preload="none" aria-label="Commercial for @celiac.nourrition, 50 seconds"><source src="assets/video/commercial.mp4" type="video/mp4"></video>
+        <video poster="assets/video/commercial_poster.jpg" width="720" height="1280" controls playsinline preload="none" aria-label="Commercial for Celiac Nourrition, 50 seconds"><source src="assets/video/commercial.mp4" type="video/mp4"></video>
       </div>
-      <div class="feature-text">
+      <div class="panel feature-text">
         <p class="tag">Commercial</p>
         <h3>Celiac Nourrition</h3>
-        <p>A 50-second animated ad for <a href="https://www.instagram.com/celiac.nourrition/" target="_blank" rel="noopener">@celiac.nourrition</a>, a nutrition account for people with celiac disease.</p>
-        <p>It plays out in the Barely Built kitchen: a worried Anna, a toaster full of crumbs, and a dietitian who walks in to explain what is safe to eat. The goal is to turn a dry health topic into a short story people want to watch and share.</p>
-        <p>Made the same way as the series: AI-animated 3D characters, a script written for the topic, and a vertical cut made for Instagram. Tap play (sound on) to watch.</p>
+        <p class="credit">Client: <strong>Celiac Nourrition</strong> &middot; <a href="https://www.instagram.com/celiac.nourrition/" target="_blank" rel="noopener">@celiac.nourrition</a></p>
+        <!-- Client quote: put the one-line quote inside the <p>, then delete the word "hidden" below. -->
+        <blockquote class="quote" hidden><p></p><cite>Celiac Nourrition</cite></blockquote>
+        <p>I made this 50-second animated ad for a nutrition account for people with celiac disease.</p>
+        <p>It plays out in the Barely Built kitchen: a worried Anna, a toaster full of crumbs, and a dietitian who walks in to explain what is safe to eat. My goal was to turn a dry health topic into a short story people want to watch and share.</p>
+        <p>I made it the same way I make the series: AI-animated 3D characters, a script written for the topic, and a vertical cut made for Instagram. Tap play (sound on) to watch.</p>
       </div>
     </article>
+
+    <div class="panel head">
+      <h2>Episode results</h2>
+      <p class="sub">Two episodes from the series and how they did on Instagram.</p>
+    </div>
     <div class="work-grid">
-      <article class="work-item">
-        <a class="work frame" href="https://www.instagram.com/reel/DfSW2tAJXBw/" target="_blank" rel="noopener">
+      <article class="panel result">
+        <a class="frame" href="https://www.instagram.com/reel/DfSW2tAJXBw/" target="_blank" rel="noopener">
           <img src="assets/work_s2ep7_rent_due_tomorrow.jpg" width="900" height="1600" loading="lazy" alt="Season 2, episode 7, Rent Due Tomorrow: Peter counts coins on the table while Anna and Ziggie watch">
-          <span class="label">Animated series</span>
         </a>
+        <p class="big"><strong>23,183</strong> views</p>
         <h3>S2 EP7 &middot; Rent Due Tomorrow</h3>
-        <ul class="stats"><li><strong>23,183</strong> views</li><li><strong>461</strong> likes</li><li><strong>59</strong> shares</li><li><strong>49</strong> saves</li><li><strong>+44</strong> followers gained</li></ul>
+        <ul class="stats"><li><strong>461</strong> likes</li><li><strong>59</strong> shares</li><li><strong>49</strong> saves</li></ul>
+        <a class="more" href="https://www.instagram.com/reel/DfSW2tAJXBw/" target="_blank" rel="noopener">Watch the reel</a>
       </article>
-      <article class="work-item">
-        <a class="work frame" href="https://www.instagram.com/reel/DfhzNdbBg92/" target="_blank" rel="noopener">
+      <article class="panel result">
+        <a class="frame" href="https://www.instagram.com/reel/DfhzNdbBg92/" target="_blank" rel="noopener">
           <img src="assets/work_s2ep14_paris.jpg" width="900" height="1600" loading="lazy" alt="Season 2, episode 14, Paris: Sienna drinks coffee on a balcony with the Eiffel Tower behind her">
-          <span class="label">Animated series</span>
         </a>
+        <p class="big"><strong>15,112</strong> views</p>
         <h3>S2 EP14 &middot; Paris</h3>
-        <ul class="stats"><li><strong>15,112</strong> views</li><li><strong>275</strong> likes</li><li><strong>49</strong> shares</li><li><strong>31</strong> saves</li><li><strong>+15</strong> followers gained</li></ul>
+        <ul class="stats"><li><strong>275</strong> likes</li><li><strong>49</strong> shares</li><li><strong>31</strong> saves</li></ul>
+        <a class="more" href="https://www.instagram.com/reel/DfhzNdbBg92/" target="_blank" rel="noopener">Watch the reel</a>
       </article>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section wrap contact">
-    <div class="paper">
-      <div class="head"><p class="note rot-l">say hi</p><h2>Collabs &amp; contact</h2></div>
-      <p>Want to work with the gang? Brand partnerships, thrift collabs, or you just want a custom animated story or website of your own. Send a note.</p>
-      <form action="mailto:YOUR_EMAIL@example.com" method="post" enctype="text/plain">
-        <label>Name<input name="name" required autocomplete="name"></label>
-        <label>Email<input name="email" type="email" required autocomplete="email"></label>
-        <label>What's the idea?<textarea name="message" rows="4" required></textarea></label>
-        <button class="btn" type="submit">Send it</button>
-      </form>
-      <p class="small">Or DM <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a> on Instagram.</p>
+  <section id="contact" class="section wrap">
+    <div class="panel contact">
+      <p class="note">say hi</p>
+      <h2>Let's make something</h2>
+      <p>Have a brand, a story or a website in mind? Message me on Instagram and tell me what you're making. I'll tell you how I can help.</p>
+      <a class="btn" href="https://ig.me/m/petes_creates" target="_blank" rel="noopener">Work with me</a>
+      <p class="small">Opens a DM to <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a> on Instagram.</p>
     </div>
   </section>
 </main>
 
-<footer>
-  <p>&copy; <span id="y"></span> Barely Built &middot; Made with love (and a lot of thrifting) by Pete's Creates</p>
+<footer class="wrap">
+  <p class="wordmark">Pete's Creates</p>
+  <p>&copy; <span id="y"></span> Pete's Creates &middot; Barely Built is an original series by Pete's Creates &middot; <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a></p>
 </footer>
 <script src="script.js"></script>
 </body>
