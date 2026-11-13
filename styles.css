@@ -81,6 +81,10 @@ h2{font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.1}
 .label{position:absolute;left:18px;bottom:18px;background:var(--glow);color:var(--brown);font-weight:600;
   font-size:.9rem;padding:3px 12px;border-radius:999px}
 
+.work-grid{display:grid;gap:30px 22px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));max-width:760px}
+.work{display:block;text-decoration:none;transition:transform .2s}
+.work:nth-child(odd){transform:rotate(-1.5deg)}.work:nth-child(even){transform:rotate(1.5deg)}
+.work:hover{transform:rotate(0) scale(1.02)}
 .about{display:grid;gap:36px;align-items:center}
 .about p{margin-bottom:14px;max-width:56ch}
 .made{opacity:.9}.made a{color:var(--glow)}
