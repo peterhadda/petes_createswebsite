@@ -188,3 +188,22 @@ form .btn{justify-self:start;border:0;cursor:pointer;margin-top:4px}
 .part-head p{margin-left:auto;margin-right:auto}
 .offer{text-align:center}
 .feature{max-width:900px;margin-left:auto;margin-right:auto}
+
+/* ---- studio part: one uniform sheet instead of separate cards ---- */
+.studio{background:var(--paper);color:var(--ink);border-radius:var(--r);overflow:hidden;box-shadow:0 10px 26px rgba(20,10,6,.4)}
+.studio .panel{background:none;box-shadow:none;border-radius:0;padding:0}
+.studio>*{margin:0;padding:clamp(28px,5vw,48px) clamp(20px,5vw,56px)}
+.studio>.part-head{background:var(--hall);color:var(--paper);padding-block:clamp(32px,6vw,56px)}
+.studio>.head{display:block;text-align:center;padding-bottom:0;border-top:1px solid rgba(81,55,42,.16)}
+.studio>.head+*{padding-top:clamp(18px,3vw,28px)}
+.studio>.feature{max-width:none;border-top:1px solid rgba(81,55,42,.16);justify-content:center}
+.studio .offer-grid{gap:0}
+.studio .offer{padding:6px clamp(12px,2.5vw,28px)}
+.studio .result{padding:0}
+.studio .work-grid{max-width:none;justify-content:center;grid-template-columns:repeat(2,minmax(0,300px))}
+.studio .frame{box-shadow:0 4px 14px rgba(20,10,6,.28)}
+@media (min-width:760px){
+  .studio .offer+.offer{border-left:1px solid rgba(81,55,42,.16)}
+  .studio>.feature{grid-template-columns:320px minmax(0,520px)}
+}
+@media (max-width:759px){.studio .offer+.offer{border-top:1px solid rgba(81,55,42,.16);margin-top:14px;padding-top:20px}}
