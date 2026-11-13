@@ -36,7 +36,7 @@ var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 })();
 
 // Contact form. Paste a form endpoint (for example a Formspree URL) into FORM_ENDPOINT to connect it to an inbox.
-var FORM_ENDPOINT = '';
+var FORM_ENDPOINT = 'https://formspree.io/f/mdegkwql';
 (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
