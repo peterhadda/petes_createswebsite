@@ -207,3 +207,7 @@ form .btn{justify-self:start;border:0;cursor:pointer;margin-top:4px}
   .studio>.feature{grid-template-columns:320px minmax(0,520px)}
 }
 @media (max-width:759px){.studio .offer+.offer{border-top:1px solid rgba(81,55,42,.16);margin-top:14px;padding-top:20px}}
+
+/* more air where the dark studio header meets the cream sheet */
+.studio>.part-head{padding-block:clamp(44px,8vw,80px)}
+.studio>.part-head+.head{border-top:0;padding-top:clamp(48px,8vw,88px)}
