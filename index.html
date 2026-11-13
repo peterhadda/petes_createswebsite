@@ -3,96 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pete's Creates — AI Videos & Website Design</title>
-<meta name="description" content="Pete's Creates makes scroll-stopping AI videos and sharp, fast websites for businesses that want to be seen.">
+<title>Barely Built — an AI animated series</title>
+<meta name="description" content="Barely Built is an animated comedy about three broke friends who thrift, restyle and sell clothes from a tiny apartment. New episodes on Instagram @petes_creates.">
+<meta property="og:title" content="Barely Built — Season 3">
+<meta property="og:description" content="Three friends. One apartment. A business that's barely built.">
+<meta property="og:image" content="assets/01_poster_title.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="lights" aria-hidden="true"></div>
+
 <header class="nav">
-  <a class="logo" href="#top">Pete's<span>Creates</span></a>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#work">Work</a>
-    <a href="#process">Process</a>
-    <a class="btn btn-small" href="#contact">Get a quote</a>
+  <a class="brand" href="#top">Barely Built<span>.</span></a>
+  <nav aria-label="Main">
+    <a href="#cast">Cast</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#about">About</a>
+    <a class="pill" href="#contact">Collabs</a>
   </nav>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <p class="eyebrow">AI video &middot; Web design</p>
-    <h1>Content that stops the scroll. Websites that close the sale.</h1>
-    <p class="lead">I make AI-generated videos and custom websites for businesses that want to look sharp and get noticed, without the agency price tag.</p>
-    <div class="cta-row">
-      <a class="btn" href="#contact">Start a project</a>
-      <a class="btn btn-ghost" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">See it on Instagram</a>
+  <!-- HOME -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="note rot-l">Season 3 is here!</p>
+      <h1>Three friends. One apartment. A business that's <em>barely built.</em></h1>
+      <p class="lead">A warm, funny animated series about being broke, figuring out adult life and building something of your own, one thrifted jacket at a time.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">Watch on Instagram</a>
+        <a class="btn btn-soft" href="#cast">Meet the gang</a>
+      </div>
     </div>
-    <ul class="stats">
-      <li><strong>48h</strong> first video draft</li>
-      <li><strong>1 week</strong> typical site launch</li>
-      <li><strong>100%</strong> custom, no templates</li>
-    </ul>
+    <figure class="frame hero-poster">
+      <img src="assets/01_poster_title.jpg" width="1200" height="1604" alt="Barely Built Season 3 poster: Sienna, Anna and Peter in their cozy apartment with Ziggie the cat" fetchpriority="high">
+    </figure>
   </section>
 
-  <section id="services" class="section">
-    <h2>What I make</h2>
-    <div class="grid two">
+  <!-- CAST -->
+  <section id="cast" class="section wrap">
+    <div class="head">
+      <p class="note rot-r">who's who</p>
+      <h2>Meet the cast</h2>
+    </div>
+
+    <figure class="frame wide-group">
+      <img src="assets/02_group_cast.jpg" width="900" height="1203" loading="lazy" alt="Anna, Peter, Sienna and Ziggie together on the cream couch">
+    </figure>
+
+    <div class="cast-grid">
       <article class="card">
-        <span class="num">01</span>
-        <h3>AI videos</h3>
-        <p>Ads, product reveals, social reels and brand films, built with the latest AI tools and edited to hit.</p>
-        <ul><li>Short-form reels &amp; ads</li><li>Product &amp; brand visuals</li><li>Voiceover, music &amp; captions</li></ul>
+        <figure class="frame"><video class="loop" poster="assets/03_anna_portrait.jpg" width="900" height="1203" muted loop playsinline preload="none" role="img" aria-label="Anna holding a denim jacket and a measuring tape"><source src="assets/video/03_anna_portrait.mp4" type="video/mp4"></video></figure>
+        <h3>Anna</h3>
+        <p class="tag">The leader</p>
+        <p>Full of ideas and never short on spontaneity. She runs the whole business from her living room and somehow keeps it all going.</p>
       </article>
       <article class="card">
-        <span class="num">02</span>
-        <h3>Website design</h3>
-        <p>Fast, mobile-first websites designed around one goal: turning visitors into customers.</p>
-        <ul><li>Landing pages &amp; full sites</li><li>Booking &amp; contact forms</li><li>SEO basics &amp; hosting help</li></ul>
+        <figure class="frame"><video class="loop" poster="assets/04_peter_portrait.jpg" width="900" height="1203" muted loop playsinline preload="none" role="img" aria-label="Peter typing on his laptop on the couch"><source src="assets/video/04_peter_portrait.mp4" type="video/mp4"></video></figure>
+        <h3>Peter</h3>
+        <p class="tag">The tech guy</p>
+        <p>Builds the website, a little chaotic, with very big dreams. If something breaks, it's probably his fault. If it works, it's definitely his fault.</p>
+      </article>
+      <article class="card">
+        <figure class="frame"><video class="loop" poster="assets/05_sienna_portrait.jpg" width="900" height="1203" muted loop playsinline preload="none" role="img" aria-label="Sienna leaning on the clothing rack with a coffee"><source src="assets/video/05_sienna_portrait.mp4" type="video/mp4"></video></figure>
+        <h3>Sienna</h3>
+        <p class="tag">The stylist &amp; the eye</p>
+        <p>She can make anything look better in seconds. Give her a sad old jacket and watch it become the best thing on the rack.</p>
+      </article>
+      <article class="card">
+        <figure class="frame"><video class="loop" poster="assets/13_peter_and_ziggie.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Ziggie the orange tabby sitting next to Peter"><source src="assets/video/13_peter_and_ziggie.mp4" type="video/mp4"></video></figure>
+        <h3>Ziggie</h3>
+        <p class="tag">Peter's cat</p>
+        <p>An orange tabby who never says a word and judges everyone anyway.</p>
       </article>
     </div>
   </section>
 
-  <section id="work" class="section">
-    <h2>Recent work</h2>
-    <p class="sub">Placeholder tiles. Swap in your best videos and sites.</p>
-    <div class="grid three">
-      <figure class="tile t1"><figcaption>AI product ad</figcaption></figure>
-      <figure class="tile t2"><figcaption>Restaurant website</figcaption></figure>
-      <figure class="tile t3"><figcaption>Brand reel</figcaption></figure>
+  <!-- EPISODES -->
+  <section id="episodes" class="section wrap">
+    <div class="head">
+      <p class="note rot-l">tap to watch</p>
+      <h2>Episodes</h2>
+      <p class="sub">Every episode lives on Instagram. Pick one and hop over.</p>
     </div>
+    <div class="ep-grid">
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/07_scene_apartment_wide.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Wide shot of the apartment with Peter on the couch and the girls packing orders"><source src="assets/video/07_scene_apartment_wide.mp4" type="video/mp4"></video><span class="label">Ep. 01</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/08_scene_working.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Sienna folding clothes at the table while Anna looks on"><source src="assets/video/08_scene_working.mp4" type="video/mp4"></video><span class="label">Ep. 02</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/09_scene_filming.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Peter filming the girls while Ziggie watches"><source src="assets/video/09_scene_filming.mp4" type="video/mp4"></video><span class="label">Ep. 03</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/10_scene_jacket.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Sienna taking a selfie in a denim jacket"><source src="assets/video/10_scene_jacket.mp4" type="video/mp4"></video><span class="label">Ep. 04</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/11_anna_closeup.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Anna close-up, excited"><source src="assets/video/11_anna_closeup.mp4" type="video/mp4"></video><span class="label">Ep. 05</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/12_sienna_closeup.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Sienna close-up holding a denim jacket"><source src="assets/video/12_sienna_closeup.mp4" type="video/mp4"></video><span class="label">Ep. 06</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/14_sienna_camera.jpg" width="900" height="1600" muted loop playsinline preload="none" role="img" aria-label="Sienna filming a selfie video"><source src="assets/video/14_sienna_camera.mp4" type="video/mp4"></video><span class="label">Ep. 07</span></a>
+      <a class="ep frame" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener"><video class="loop" poster="assets/06_duo.jpg" width="900" height="1203" muted loop playsinline preload="none" role="img" aria-label="Anna and Sienna hugging"><source src="assets/video/06_duo.mp4" type="video/mp4"></video><span class="label">Ep. 08</span></a>
+    </div>
+    <p class="center"><a class="btn" href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">All episodes on Instagram</a></p>
   </section>
 
-  <section id="process" class="section">
-    <h2>How it works</h2>
-    <ol class="steps">
-      <li><h3>Tell me the goal</h3><p>A quick chat about your business, audience and what success looks like.</p></li>
-      <li><h3>I create</h3><p>You get a first draft fast, then we refine it together.</p></li>
-      <li><h3>Launch</h3><p>I deliver everything ready to post or go live, and stay around for tweaks.</p></li>
-    </ol>
-  </section>
-
-  <section id="contact" class="section contact">
+  <!-- ABOUT -->
+  <section id="about" class="section wrap about">
     <div>
-      <h2>Let's build yours</h2>
-      <p class="sub">Tell me what you need and I'll reply within a day.</p>
-      <p><a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a> on Instagram</p>
+      <div class="head"><p class="note rot-r">the story</p><h2>About the series</h2></div>
+      <p>Barely Built follows three friends in their mid-20s who start a small business from an apartment. They thrift clothes, restyle them and sell them online.</p>
+      <p>It's a comedy about being broke, figuring out adult life and building something of your own, told in a bright, cinematic 3D animated style.</p>
+      <p>Every episode happens in Anna's apartment: terracotta walls, string lights, sticky notes everywhere, and a clothing rack that's always one hanger away from collapsing.</p>
+      <p class="made">Created by <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">Pete's Creates</a>, an AI creator making animated stories and websites.</p>
     </div>
-    <form id="form" action="mailto:YOUR_EMAIL@example.com" method="post" enctype="text/plain">
-      <label>Name<input name="name" required autocomplete="name"></label>
-      <label>Email<input name="email" type="email" required autocomplete="email"></label>
-      <label>I'm interested in
-        <select name="service"><option>AI videos</option><option>Website design</option><option>Both</option></select>
-      </label>
-      <label>Tell me about your project<textarea name="message" rows="4" required></textarea></label>
-      <button class="btn" type="submit">Send message</button>
-    </form>
+    <figure class="frame ziggie">
+      <img src="assets/15_ziggie_sheet.jpg" width="1200" height="678" loading="lazy" alt="Ziggie the orange tabby from many angles and expressions">
+      <figcaption class="note">Ziggie, judging from every angle</figcaption>
+    </figure>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section wrap contact">
+    <div class="paper">
+      <div class="head"><p class="note rot-l">say hi</p><h2>Collabs &amp; contact</h2></div>
+      <p>Want to work with the gang? Brand partnerships, thrift collabs, or you just want a custom animated story or website of your own. Send a note.</p>
+      <form action="mailto:YOUR_EMAIL@example.com" method="post" enctype="text/plain">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>What's the idea?<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send it</button>
+      </form>
+      <p class="small">Or DM <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a> on Instagram.</p>
+    </div>
   </section>
 </main>
 
-<footer>&copy; <span id="y"></span> Pete's Creates. All rights reserved.</footer>
+<footer>
+  <p>&copy; <span id="y"></span> Barely Built &middot; Made with love (and a lot of thrifting) by Pete's Creates</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
