@@ -180,3 +180,11 @@ input:focus-visible,textarea:focus-visible{outline:3px solid var(--denim);outlin
 form .btn{justify-self:start;border:0;cursor:pointer;margin-top:4px}
 .contact .btn{margin-top:4px}
 #form-status{font-weight:700;margin-top:0!important}
+
+/* ---- studio part + contact: centred on the page ---- */
+#work>.head,#contact .contact,.work-grid{margin-left:auto;margin-right:auto}
+#work>.head{text-align:center}
+.part-head{text-align:center}
+.part-head p{margin-left:auto;margin-right:auto}
+.offer{text-align:center}
+.feature{max-width:900px;margin-left:auto;margin-right:auto}
