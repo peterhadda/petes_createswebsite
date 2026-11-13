@@ -34,3 +34,24 @@ var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   }, { threshold: 0.4 });
   vids.forEach(function (v) { io.observe(v); });
 })();
+
+// Contact form. Paste a form endpoint (for example a Formspree URL) into FORM_ENDPOINT to connect it to an inbox.
+var FORM_ENDPOINT = '';
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  var status = document.getElementById('form-status');
+  function say(t) { status.textContent = t; status.hidden = false; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = form.elements.name.value.trim(), email = form.elements.email.value.trim(), note = form.elements.message.value.trim();
+    if (!name || !note || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { say('Please add your name, a valid email and a note.'); return; }
+    if (!FORM_ENDPOINT) { say('This form is not connected to an inbox yet. Please DM @petes_creates on Instagram for now.'); return; }
+    var btn = form.querySelector('button'); btn.disabled = true; say('Sending...');
+    fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, message: note }) })
+      .then(function (r) { if (!r.ok) throw new Error(); form.reset(); say('Sent. Thanks, ' + name + '. I will reply by email.'); })
+      .catch(function () { say('That did not send. Please try again, or DM @petes_creates on Instagram.'); })
+      .then(function () { btn.disabled = false; });
+  });
+})();

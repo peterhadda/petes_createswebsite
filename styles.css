@@ -160,3 +160,23 @@ footer a{color:var(--sky)}
   .room img{height:100%;transform:none!important}
   .btn,.btn-alt{transition:none}
 }
+
+/* ---- studio part: more room between blocks ---- */
+#work{padding-top:calc(var(--section)*1.4)}
+#work>*+*{margin-top:clamp(44px,7vw,80px)}
+#work>.head+.offer-grid,#work>.head+.work-grid{margin-top:var(--gap)}
+.part-head{padding:clamp(28px,6vw,52px)}
+.offer{padding:clamp(22px,4vw,32px)}
+.offer-grid,.work-grid{gap:clamp(18px,3.5vw,32px)}
+.feature-text{padding:clamp(24px,4.5vw,40px)}
+.feature-text p+p{margin-top:16px}
+#contact{padding-top:calc(var(--section)*1.2)}
+
+/* ---- contact form ---- */
+form{display:grid;gap:16px;margin-top:22px}
+label{display:grid;gap:6px;font-weight:700;font-size:.92rem}
+input,textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--frame);border:2px solid rgba(81,55,42,.3);border-radius:12px;padding:12px;width:100%}
+input:focus-visible,textarea:focus-visible{outline:3px solid var(--denim);outline-offset:1px;border-color:var(--denim)}
+form .btn{justify-self:start;border:0;cursor:pointer;margin-top:4px}
+.contact .btn{margin-top:4px}
+#form-status{font-weight:700;margin-top:0!important}

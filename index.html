@@ -184,9 +184,15 @@
     <div class="panel contact">
       <p class="note">say hi</p>
       <h2>Let's make something</h2>
-      <p>Have a brand, a story or a website in mind? Message me on Instagram and tell me what you're making. I'll tell you how I can help.</p>
-      <a class="btn" href="https://ig.me/m/petes_creates" target="_blank" rel="noopener">Work with me</a>
-      <p class="small">Opens a DM to <a href="https://www.instagram.com/petes_creates/" target="_blank" rel="noopener">@petes_creates</a> on Instagram.</p>
+      <p>Have a brand, a story or a website in mind? Leave your name, your email and a note about what you're making. I'll tell you how I can help.</p>
+      <form id="contact-form" novalidate>
+        <label for="f-name">Name<input id="f-name" name="name" required autocomplete="name"></label>
+        <label for="f-email">Email<input id="f-email" name="email" type="email" required autocomplete="email"></label>
+        <label for="f-note">Note<textarea id="f-note" name="message" rows="5" required placeholder="What are you making?"></textarea></label>
+        <button class="btn" type="submit">Work with me</button>
+        <p id="form-status" class="small" role="status" hidden></p>
+      </form>
+      <p class="small">Or DM <a href="https://ig.me/m/petes_creates" target="_blank" rel="noopener">@petes_creates</a> on Instagram.</p>
     </div>
   </section>
 </main>
